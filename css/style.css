@@ -1,5 +1,6 @@
 @charset 'UTF-8';
-@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Marcellus+SC';
+
 /* base */
 html {
   font-size: 62.5%;
@@ -7,16 +8,16 @@ html {
 body{
   font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   font-size: 1.4rem;
-  line-height: 1.6;
-  letter-spacing: .1rem;
   color: #12427d;
-  background-color: #d8efff;
+  line-height: 1.6;
+  background-color: #fff;
 }
 
 /* font */
 .pacifico {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Marcellus SC', serif;
 }
+
 /* align */
 .text-center {
   text-align: center;
@@ -27,174 +28,181 @@ body{
 }
 
 /* layout */
-.container,#registration_button {
+.container,#registration_button a {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
 /* header */
-#header-inner {
+header {
   max-width: 100%;
   height: 500px;
+  padding: 65px 0;
   margin: 0 auto;
-  padding: 80px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   background: url(../images/img_header.jpg),no-repeat,0,0;
   background-size: cover;
 }
 #header-inner h1 {
+  position: absolute;
+  top: 20px;
+  right: 40px;
   font-size: 5rem;
   color: #ffe99b;
-  letter-spacing: .3rem;
-  margin-bottom: 60px;
 }
 #header-inner p {
-  font-size: 1.6rem;
-  color: #ddd;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
-  padding: 30px 180px;
+  position: absolute;
+  top: 120px;
+  right: 35px;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 1.8;
+  text-align: right;
 }
 
 /* contents */
 section {
-  padding: 80px 0;
+  padding: 50px 0 60px;
 }
 section .container {
   width: 94%;
   margin: 0 auto;
 }
 section h2 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
+  color: #ff7f50;
+  letter-spacing: -0.6px;
+  margin-bottom: 50px;
 }
 
 /* point */
-#point h2 {
-  margin-bottom: 60px;
-}
 #point h2 i {
-  font-size: 4rem;
-  margin-right: 3.5px;
+  font-size: 3.7rem;
+  margin-right: 1.5px;
   vertical-align: top;
 }
 #point .container{
-  display: -webkit-flex;
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
 }
 #point .point-box{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-flex: 1;
   flex: 1;
+  -webkit-flex: 1;
   margin: 0px 10px;
-  border: solid 0.5rem #ffe99b;
+  border: solid 0.5rem #b0e0e6;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: #4c4c4c;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-shadow: 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
   background-color: #fff;
 }
 #point .point-title {
   height: 40px;
-  background-color: #ffe99b;
+  background-color: #b0e0e6;
 }
 #point .point-text {
   padding: 25px;
 }
 #point .point-title i {
-  font-size: 2rem;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: 30px;
   height: 30px;
-  margin-right:5px;
-  padding-top: 10px;
+  font-size: 2rem;
   text-align: center;
+  padding-top: 10px;
+  margin-right:5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 #point h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
 }
 
 /* registration */
 #registration {
-  background-color: #fff;
+  background-color: #fff5ee;
 }
 #registration h2 i {
-  font-size: 2.5rem;
-  margin-right: 3.5px;
-  padding: 5px;
-  border: solid 0.2rem #12427d;
+  font-size: 2.4rem;
+  padding: 5px 6px 6px;
+  margin-right: 1.5px;
+  border: solid 0.2rem #ff7f50;
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-#registration_button {
-  background-color: #12427d;
-  color: #FFF;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-  text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-  width: 280px;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding: 10px 0;
 }
 #registration_button a {
   display: block;
+  width: 280px;
+  font-size: 1.6rem;
   color: #fff;
   text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  background-color: #9acd32;
 }
-#registration_button:hover {
-  background-color: #0c2c54;
+#registration_button a:hover {
+  background-color: #6b8e23;
 }
 /* Footer */
 footer {
   padding: 10px 0;
-  color: #333;
-  background-color: #ddd;
+  font-size: 1.2rem;
+  color: #666;
   text-transform: uppercase;
+  background-color: #eee;
 }
 
 @media (max-width: 768px) {
-  /* header */
-  #header-inner {
+/* header */
+  header {
     height: 250px;
+    padding: 25px 80px;
     margin: 0 auto;
-    padding: 30px 0;
   }
   #header-inner h1 {
-    font-size: 4rem;
-    letter-spacing: .2rem;
-    margin-bottom: 30px;
+    position: static;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 20px;
   }
   #header-inner p {
+    position: static;
     font-size: 1.2rem;
-    color: #ddd;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
-    padding: 0 80px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    background-color: rgba(0, 0, 0, 0.1);
   }
-  /* contents */
+/* contents */
   section {
     padding: 35px 0;
   }
   section h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
   }
-  /* contents */
-  /* point */
-  #point h2 {
-    margin-bottom: 30px;
-  }
+/* point */
   #point h2 i {
-    font-size: 3.3rem;
-    margin-right: 1.5px;
+    font-size: 3.2rem;
     margin-top: 1.5px;
+    margin-right: 1.5px;
   }
   #point .container{
     flex-direction: column;
@@ -204,29 +212,21 @@ footer {
   }
   #point .point-title {
     height: 40px;
-    background-color: #ffe99b;
   }
   #point .point-text {
     padding: 15px;
   }
   /* registration */
-  #registration {
-    background-color: #fff;
-  }
   #registration h2 {
     font-size: 1.8rem;
-    letter-spacing: 0;
   }
   #registration h2 i {
     font-size: 2rem;
     margin-right: 2.3px;
   }
-  #registration_button {
-    margin-bottom: 40px;
-  }
-  #registration_button:hover {
-    background-color: #12427d;
-    text-decoration: underline;
+  #registration_button a {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
   }
   /* Footer */
   footer {
